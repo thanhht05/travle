@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chùa Thiên Mụ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <style>
+        p {
+            font-size: 1.8rem;
+        }
+
+        h3 {
+            color: #003366;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="header"></div>
+    <script>
+        async function loadHeader() {
+            const response = await fetch('./template/header.html');
+            const content = await response.text();
+            document.getElementById('header').innerHTML = content;
+        }
+        loadHeader();
+    </script>
+    <main>
+        <div class="container">
+
+            <h1 style="font-weight: bold; color: #003366; text-align: center; margin: 10px;">Chùa Thiên Mụ - đệ nhất
+                danh lam xứ Huế
+            </h1>
+            <p>Chùa Thiên Mụ hay còn gọi là chùa Linh Mụ là một ngôi chùa cổ nằm trên đồi Hà Khê, tả ngạn sông Hương,
+                cách trung tâm thành phố Huế (Việt Nam) khoảng 5 km về phía tây, Chùa nằm giữa một không gian non nước
+                hữu tình – đã từng là nguồn cảm hứng của bao tác phẩm thi ca nhạc họa. Vẻ đẹp của ngôi chùa được tạo nên
+                từ sự hòa quyện giữa giá trị lịch sử, tâm linh và giá trị văn hóa nghệ thuật độc đáo. Chùa Thiên Mụ Huế
+                được xếp vào diện “Thần Kinh Nhị Thập Cảnh” bởi vua Thiệu Trị</p>
+            <hr>
+
+            <p class="mb-4">Huế là miền đất Phật giáo. Nơi đây có nhiều chùa chiền, thiền viện gắn với lịch sử phát
+                triển Phật giáo
+                xứ
+                Đàng Trong thời chúa Nguyễn đi mở cõi và miền Trung sau này. Trong số đó, ngôi cổ tự nổi tiếng nhất là
+                chùa
+                Thiên Mụ, được mệnh danh là đệ nhất danh lam xứ Huế.</p>
+            <div class="text-center">
+                <img src="/landing-page-travel/img/tm1.jpg" alt="">
+                <p class="mb-4">Khu mộ tháp của cố Hòa thượng Thích Đôn Hậu</p>
+
+            </div>
+            <h3>Chùa Thiên Mụ nằm ở đâu?</h3>
+            <p>
+                <b>Địa điểm:</b> Hương Hòa, Thành phố Huế, Hương Hòa Thành phố Huế
+                <br>
+                <b> Giờ mở cửa:</b> từ 8h đến 18h
+            </p>
+            <hr>
+            <h3>Kiến trúc bề thế của Chùa Thiên Mụ Huế</h3>
+            <p>Đến với chùa Thiên Mụ Huế, du khách sẽ thấy quần thể nhiều công trình kiến trúc đẹp mắt và bề thế, trong
+                đó nổi bật là Đại điện Hùng Chùa Thiên Mụ. Trong khuôn viên của chùa là cả một vườn hoa cỏ được chăm sóc
+                vun trồng hàng ngày.
+                <br>
+                Ở đó, hòn non bộ của vị tổ nghề hát tuồng Việt Nam Đào Tấn được đặt gần chiếc xe ô tô – di vật của cố
+                Hòa thượng Thích Quảng Đức. Cuối khu vườn là khu mộ tháp của cố Hòa thượng Thích Đôn Hậu- vị trụ trì nổi
+                tiếng của chùa Thiên Mụ, đã cống hiến cả cuộc đời mình cho những hoạt động ích đạo giúp đời.
+            </p>
+            <div class="text-center">
+                <img src="/landing-page-travel/img/tm3.jpg" alt="">
+                <p>Hình ảnh chùa Thiên Mụ lặng lẽ soi mình bên dòng sông Hương</p>
+            </div>
+            <p>Từ sân chùa nhìn xuống là dòng sông Hương lững lờ trôi nhẹ nhàng, giữa vùng trời nước mênh mông thăm
+                thẳm. Những chiếc thuyền neo đậu hiền hòa dưới bến, chờ đợi những người khách đang viếng thăm chùa. </p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3826.4425661396867!2d107.54233197338408!3d16.453113329050243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3141a6972c6005d3%3A0xf7268b7a4cf579ba!2zQ2jDuWEgVGhpw6puIE3hu6U!5e0!3m2!1svi!2s!4v1733570036064!5m2!1svi!2s"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+        </div>
+        <div id="footer"></div>
+        <script>
+            async function loadHeader() {
+                const response = await fetch('./template/footer.html');
+                const content = await response.text();
+                document.getElementById('footer').innerHTML = content;
+            }
+            loadHeader();
+        </script>
+    </main>
+</body>
+
+</html>

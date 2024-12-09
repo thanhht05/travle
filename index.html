@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Travel Agency Website</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+		crossorigin="anonymous"></script>
+	<link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+		integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+		integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+</head>
+
+<body>
+
+	<div id="header"></div>
+	<script>
+		async function loadHeader() {
+			const response = await fetch('./template/header.html');
+			const content = await response.text();
+			document.getElementById('header').innerHTML = content;
+		}
+		loadHeader();
+	</script>
+
+
+
+
+	<!--   MAIN   -->
+	<main id="home">
+		<!--  CONTAINER FOR HERO-IMAGE + FLIGHTS SEARCHER  -->
+		<div class="hero-wrapper">
+			<div class="content-wrapper">
+				<!-- FLIGHTS SEARCHER  -->
+				<div class="container-searcher">
+					<!--  TAPS FOR SEARCHER  -->
+					<div class="navigation-primary">
+						<div class="tabs">
+							<a href="#flights" class="active" title="flights"><i class="fas fa-plane"></i>Chuyến bay</a>
+							<a href="#hotels" title="hotels"><i class="fas fa-bed"></i>Khách sạn</a>
+							<a href="#cars" title="cars"><i class="fas fa-car"></i>Ô tô</a>
+						</div>
+					</div>
+					<!--  SEARCHER  -->
+					<div class="navigation-secondary">
+						<form class="search-flight" action="#">
+
+
+							<div class="route-searcher">
+								<div class="route-wrapper">
+									<div class="outer-input">
+										<label for="origin" class="origin-label">Từ:</label>
+										<input class="input" id="origin" type="text" name="origin" placeholder="Hà Nội">
+									</div>
+									<div class="route-divider"></div>
+									<div class="outer-input">
+										<label for="destination" class="destination-label">Đến:</label>
+										<input class="input" id="destination" type="text" name="destination"
+											placeholder="Huế">
+									</div>
+								</div>
+							</div>
+
+							<div class="date-searcher">
+								<div class="date-wrapper">
+									<div class="outer-input">
+										<label for="route-picker-departing"><i
+												class="fas fa-plane-departure"></i></label>
+										<input class="input" id="route-picker-departing" type="date"
+											name="picker-departing">
+									</div>
+									<div class="route-divider" id="divider"></div>
+									<div class="outer-input" id="return-date">
+										<label for="route-picker-returning"><i class="fas fa-plane-arrival"></i></label>
+										<input class="input" id="route-picker-returning" type="date"
+											name="picker-returning">
+									</div>
+								</div>
+							</div>
+
+
+							<button class="search">
+								Đặt lịch
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--  FEATURES SECTION  -->
+		<section id="features">
+			<div class="features-container">
+				<div class="wrapper">
+					<h2>Tự tin đi du lịch</h2>
+
+					<div class="row-container">
+						<!-- SMALL BOX CONTAINER  -->
+						<div class="feature-card">
+							<img src="./img/img3.jpg" alt="travel organized">
+
+						</div>
+
+						<!-- SMALL BOX CONTAINER  -->
+						<div class="feature-card">
+							<img src="./img/img1.jpg" alt="morning woman">
+
+						</div>
+
+						<!-- SMALL BOX CONTAINER  -->
+						<div class="feature-card">
+							<img src="./img/img2.jpg" alt="couple travelling">
+
+						</div>
+					</div>
+					<div class="wrapper-container-middle">
+						<h2>Vì sao bạn nên chọn Huế</h2>
+						<div class="row-container-middle">
+							<div class="middle-card">
+								<i class="fas fa-tags"></i>
+								<h4>Huế là thiên đường ẩm thực</h4>
+								<p>Ẩm thực Huế vô cùng đa dạng và phong phú, từ ẩm thực cung đình cho đến ẩm thực dân
+									gian đường phố. </p>
+							</div>
+							<div class="middle-card">
+								<i class="fas fa-award"></i>
+
+								<h4>Huế là nơi hội tụ của vẻ đẹp thiên nhiên và lịch sử</h4>
+								<p>Huế nổi tiếng trầm mặc bởi vẻ đẹp lịch sử, kiến trúc cung đình lăng tẩm của các vua
+									chúa dưới triều nhà Nguyễn. </p>
+							</div>
+							<div class="middle-card">
+								<i class="fas fa-leaf"></i>
+								<h4>Chi phí du lịch Huế rẻ</h4>
+								<p>Tất cả các dịch vụ ăn uống, lưu trú, vui chơi ở Huế đều nằm ở mức giá bình dân, không
+									quá đắt, phù hợp với mọi đối tượng. </p>
+							</div>
+							<div class="middle-card">
+								<i class="fas fa-sync-alt"></i>
+
+								<h4>Phương tiện di chuyển đa dạng</h4>
+								<p>Bạn có thể lựa chọn đến Huế bằng nhiều phương tiện khác nhau như máy bay, tàu hỏa, ô
+									tô, xe máy,..</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<section id="recommendations">
+			<div class="recommendations-container">
+				<div class="wrapper">
+					<h2>Địa điểm du lịch nổi tiếng</h2>
+					<div class="recommendation-row">
+						<div class="recommendation-slide-container">
+							<div class="recommendation-box">
+								<img src="img/dn.jpg" alt="Caribean beach">
+								<div class="box-text">
+									<h4 class="travel-heading">Đại Nội Huế</h4>
+									<p class="travel-price">Từ: 120.000 đ/người</p>
+								</div>
+								<a href="/daiNoi.html" class="btn btn-primary mb-2 fw-bold p-3">Xem
+									thêm thông tin</a>
+							</div>
+
+							<div class="recommendation-box">
+								<img src="img/tm.jpg" alt="Dubai City">
+								<div class="box-text">
+									<h4 class="travel-heading">Chừa Thiên Mụ</h4>
+									<p class="travel-price">Miễn phí</p>
+								</div>
+								<a href="/chuathienmu.html"
+									class="btn btn-primary mb-2 fw-bold p-3">Xem
+									thêm thông tin</a>
+
+							</div>
+
+							<div class="recommendation-box">
+								<img src="img/vc.jpg" alt="girl at the lake">
+								<div class="box-text">
+									<h4 class="travel-heading">Đồi Vọng Cảnh</h4>
+									<p class="travel-price">Miễn phí</p>
+								</div>
+								<button class="btn">Xem thêm thông tin</button>
+
+							</div>
+
+							<div class="recommendation-box">
+								<img src="img/tg.jpg">
+								<div class="box-text">
+									<h4 class="travel-heading"> Phá Tam Giang</h4>
+									<p class="travel-price">Miễn phí</p>
+
+								</div>
+								<button class="btn">Xem thêm thông tin</button>
+
+							</div>
+							<div class="recommendation-box">
+								<img src="img/bm.jpg" alt="woman relaxing in a pool">
+								<div class="box-text">
+									<h4 class="travel-heading">Vườn Quốc gia Bạch Mã</h4>
+									<p class="travel-price">Miễn phí</p>
+								</div>
+								<button class="btn">Xem thêm thông tin</button>
+
+							</div>
+
+							<div class="recommendation-box">
+								<img src="img/rc.jpg" alt="A man, a woman and a boy watching a map">
+								<div class="box-text">
+									<h4 class="travel-heading"> Rừng ngập mặn Rú Chá</h4>
+									<p class="travel-price">Miễn phí</p>
+								</div>
+								<button class="btn">Xem thêm thông tin</button>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+		<!-- TOP DESTINES SECTION -->
+		<section id="top-destines">
+			<div class="destines-container">
+				<div class="wrapper">
+					<h2>Các địa điểm khác</h2>
+					<div class="destines-row">
+						<!-- BOX CONTAINER  -->
+						<div class="destines-card Picture">
+							<img src="img/ad.jpg" alt="">
+							<div class="destines-text">
+								<h4>Cung An Định</h4>
+								<p>Kiến trúc cổ trong Cung An Định đã từng gây sốt trên mạng xã hội khi MV "Không thể
+									cùng nhau suốt kiếp" của nữ ca sĩ Hòa Minzy ra mắt. </p>
+							</div>
+							<a href="#">Find hotel deals &#10095;</a>
+						</div>
+
+						<!-- BOX CONTAINER  -->
+						<div class="destines-card Picture">
+							<img src="img/kd.jpg" alt="">
+							<div class="destines-text">
+								<h4> Lăng Khải Định</h4>
+								<p>ăng Khải Định là kiểu công trình kiến trúc mang đậm nét văn hóa Á – Âu kết hợp, đỉnh
+									cao của nghệ thuật ghép sành sứ và thủy tinh.</p>
+							</div>
+							<a href="#">Khám phá thêm &#10095;</a>
+
+						</div>
+						<!-- BOX CONTAINER  -->
+						<div class="destines-card Picture">
+							<img src="img/st.jpg" alt="">
+							<div class="destines-text">
+								<h4> Linh thiêng Huyền Không Sơn Thượng</h4>
+								<p>Huyền Không Sơn Thượng mang không gian bình yên đặc biệt, tránh xa khỏi những bộn bề
+									quen thuộc ở phố thị giữa rừng thông xanh mướt</p>
+							</div>
+							<a href="#">Khám phá thêm &#10095;</a>
+
+						</div>
+						<!-- BOX CONTAINER  -->
+						<div class="destines-card Picture">
+							<img src="img/ta.jpg" alt="">
+							<div class="destines-text">
+								<h4>Đồi Thiên An</h4>
+								<p>Ngọn đồi này còn được ví như là Đà Lạt giữa lòng cố đô, với không gian mát mẻ cùng
+									sắc cây xanh biếc xung quanh</p>
+							</div>
+							<a href="#">Khám phá thêm &#10095;</a>
+						</div>
+
+
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<!-- SOCIAL/NEWSLETTER SECTION -->
+		<section id="newsletter">
+			<div class="newsletter-container">
+				<!-- MAIN CONTAINER FOR PICTURE -->
+				<div class="newsletter-wrapper">
+					<!-- CONTAINER TOP FOR TEXT -->
+					<div class="social-top">
+						<div class="social-text">
+							<h3>Khám phá thế giới cùng chúng tôi</h3>
+							<p>Đăng ký nhận bản tin của chúng tôi và chúng tôi sẽ gửi cho bạn những ưu đãi tốt nhất,
+								truyền cảm hứng nhất mỗi tuần.
+							</p>
+							<form action="#" class="subscribe">
+								<input type="email" name="email" placeholder="Email address">
+								<button type="submit">Đăng ký</button>
+							</form>
+
+							<p>Bằng cách gửi email của mình, bạn đồng ý nhận các thông tin liên lạc được tạo tự động và
+								được cá nhân hóa, bao gồm các giao dịch và ưu đãi về các sản phẩm và dịch vụ của chúng
+								tôi và đối tác đã chọn của chúng tôi (chúng tôi không chia sẻ dữ liệu của bạn được thu
+								thập tại đây với các đối tác này). Để biết thêm thông tin hoặc nếu bạn muốn hủy đăng ký,
+								hãy kiểm tra Chính sách quyền riêng tư của chúng tôi (hoặc bạn có thể hủy đăng ký bằng
+								cách nhấp vào liên kết trong email của chúng tôi)
+
+							</p>
+						</div>
+					</div>
+					<!-- CONTAINER BOTTOM FOR SOCIAL ICONS -->
+					<div class="social-bottom">
+						<p>Kết nối với chúng tôi </p>
+						<div class="social-icons">
+							<i class="fab fa-facebook"></i>
+							<i class="fab fa-instagram"></i>
+							<i class="fab fa-youtube"></i>
+							<i class="fab fa-twitter"></i>
+							<i class="fab fa-pinterest"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div id="footer"></div>
+		<script>
+			async function loadHeader() {
+				const response = await fetch('./template/footer.html');
+				const content = await response.text();
+				document.getElementById('footer').innerHTML = content;
+			}
+			loadHeader();
+		</script>
+
+	</main>
+
+
+	<script src="main.js"></script>
+</body>
+
+</html>
