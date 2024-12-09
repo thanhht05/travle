@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Đồi vọng cảnh</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <style>
+        p {
+            font-size: 1.8rem;
+        }
+
+        h3 {
+            color: #003366;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="header"></div>
+    <script>
+        async function loadHeader() {
+            const response = await fetch('./template/header.html');
+            const content = await response.text();
+            document.getElementById('header').innerHTML = content;
+        }
+        loadHeader();
+    </script>
+    <main>
+        <div class="container">
+            <h2>Lên đồi Vọng Cảnh thu trọn Huế mộng mơ trong tầm mắt</h2>
+            <hr>
+            <p>Đồi Vọng Cảnh tọa lạc tại số 102 đường Huyền Trân Công Chúa, xã Thủy Biều. Từ trung tâm thành phố Huế bạn
+                đi
+                khoảng 7km về hướng Nam là đến nơi. Theo tương truyền, ngọn đồi này chính là nơi vua nhà Nguyễn đã từng
+                dừng
+                chân vãng cảnh.</p>
+            <div class="text-center mb-5">
+                <img style="width: 100%;" src="/img/doi-vong-canh-1.webp" alt="">
+                <p>Đồi Vọng Cảnh với cảnh non nước hữu tình </p>
+            </div>
+
+            <h2 class="mb-5">Cách di chuyển đến đồi Vọng Cảnh</h2>
+            <br><br>
+            <p>Du khách phương xa muốn đến đồi Vọng Cảnh cần có vé máy bay đi Huế. Tấm vé máy bay sẽ đưa du khách hạ
+                cánh tại sân bay Phú Bài. Từ đây, bạn có thể đặt xe đưa đón sân bay vào trung tâm TP Huế. Ngoài ra, du
+                khách ngoại tỉnh cũng có thể đến Huế bằng tàu lửa, xe khách.
+                <br>
+                Từ trung tâm thành phố, mọi người thường thích thuê xe máy để đến đồi Vọng Cảnh. Chạy thẳng tuyến đường
+                Điện Biên Phủ – Lê Ngô Cát khoảng 15 phút là bạn đến được những điểm nghỉ gần đồi. Từ đây, bạn có thể
+                gửi xe máy và tản bộ dọc theo đường Huyền Trân Công Chúa là lên được đến đỉnh đồi. Đường khá dễ đi nên
+                nếu muốn tiết kiệm thời gian bạn có thể đi xe cá nhân, xe máy lên đồi đều được.
+            </p>
+            <p>Đồi Vọng Cảnh sở hữu cảnh đẹp thiên nhiên hữu tình với trời, mây, non, nước. Dòng sông Hương e ấp uốn
+                lượn dưới chân đồi. Xa xa là những đền đài lăng tẩm nhuốm màu lịch sử. Ngọn đồi này không quá rộng, cũng
+                chẳng quá cao nên rất thuận lợi để du khách ghé thăm.
+                <br><br>
+                Bạn có thể đến đồi Vọng Cảnh vào bất cứ thời điểm nào trong ngày. Nhưng theo “thổ địa Huế” chính hiệu,
+                những khoảnh khắc đẹp nhất khi ngắm cảnh trên đồi là sáng sớm khi khung cảnh được bao phủ bởi màn sương
+                mờ ảo. Chiều tối khoảng sau 4h là lúc hoàng hôn buông cũng tạo thành một khung cảnh vô cùng lãng mạn.
+            </p>
+            <div class="text-center mb-5">
+                <img style="width: 100%;" src="/img/doi-vong-canh-2.webp" alt="">
+                <p>Đồi Vọng Cảnh với cảnh non nước hữu tình </p>
+            </div>
+
+            <p>Đồi Vọng Cảnh, từ một điểm du lịch cộng đồng chỉ được người dân Huế biết đến nay đã trở thành điểm đến
+                hấp dẫn mọi du khách. Nếu có dịp đến Huế, đừng bỏ lỡ cơ hội khám phá “mắt thần” cố đô bạn nhé!</p>
+        </div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3826.9520864033952!2d107.56264917425443!3d16.4272596297555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3141a4057f2d72d9%3A0x22369b16118967e0!2sVong%20Canh%20Hill!5e0!3m2!1sen!2s!4v1733740233559!5m2!1sen!2s"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </main>
+
+
+</body>
+
+</html>

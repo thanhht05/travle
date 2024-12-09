@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap");
 
 * {
   margin: 0;
@@ -23,7 +22,7 @@
 
 body {
   background-color: var(--white-color);
-  font-family: "Quicksand", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /*-----Modal SIGN IN / Registration -----*/
@@ -300,6 +299,7 @@ header {
   justify-content: center;
   align-items: center;
   background-color: var(--blue-color);
+  position: relative;
 }
 .header-search{
   width: 350px;
@@ -1786,8 +1786,29 @@ footer a:hover {
     min-width: 140px;
     margin: 20px 10px;
   }
-}
 
+  .logo img{
+    width: 50%;
+  }
+  .header-form{
+    display: flex;
+  }
+  .header-input{
+    height: 28px;
+  }
+  .header-input::placeholder{
+    font-size: 1.4rem;
+  }
+  .header-btn{
+    height: 28px;
+    font-size: 1.3rem;
+  }
+}
+.bnt-prve{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
 @media screen and (max-width: 660px) {
   .modal-content {
     width: 65%;
